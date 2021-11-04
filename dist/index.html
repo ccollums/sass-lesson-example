@@ -2,13 +2,45 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Activity Tracker</title>
+    <title>Intro To Sass</title>
   </head>
   <body>
-    <h1>Activity Tracker</h1>
-    <img src="./images/turing-logo.png" alt="turing logo" height="100px" width="100px">
-
-<!-- Do not include the scripts.js file here - it is done automatically by the webpack server -->
+    <h1>Intro To Sass</h1>
+    <h2>Syntactically Awesome StyleSheets</h2>
+    <section class="objectives">
+      <div>
+        <h3>Objectives:</h3>
+        <ul>
+          <li>Explain the differences between the two syntaxes: SASS and SCSS</li>
+          <li>Apply the basics of Sass to follow the principles of DRY</li>
+          <li>Contrast the pros and cons of using a CSS Preprocessor</li>
+        </ul>
+      </div>
+    </section>
+    <h4>Vocab:</h4>
+    <section class="two-column">
+      <div>
+        <p class="vocab">**CSS Preprocessor** a program that lets you generate CSS from the preprocessor’s own unique syntax. It extends the default capabilities of CSS. Examples include: Sass, LESS, Stylus and more.<p/>
+      </div>
+      <div>
+        <p class="vocab">**Compiler** (Technically, I think it's actually transpiling in this case...) converts our preprocessed code into css code so that the browser can understand it. For example, Webpack can use the dart-sass library to transpile SCSS to CSS</p>
+      </div>
+    </section>
+    <h5>Basics:</h5>
+    <section class="basics">
+      <p>Keep your code DRY using the following tricks: </p>
+      <ul>
+        <li>defining <a href="https://sass-lang.com/documentation/variables">variables</a> that can be peppered across multiple CSS files</li>
+        <li><a href="https://sass-lang.com/documentation/style-rules#nesting">nesting</a> elements to visibly reflect the HTML element relationships</li>
+        <li>break code into <a href="https://sass-lang.com/documentation/at-rules/use">smaller files</a> without affecting performance</li>
+        <li><a href="https://sass-lang.com/documentation/at-rules/mixin">grouping styles</a> together to easily reference throughout your CSS</li>
+        <li><a href="https://sass-lang.com/documentation/at-rules/extend">share properties</a> between selectors</li>
+      </ul>
+    </section>
+    <div class="button-container">
+      <button class="button">button one</button>
+      <button class="bigger-button">button two</button>
+    </div>
     <script src="bundle.js"></script>
   </body>
 </html>

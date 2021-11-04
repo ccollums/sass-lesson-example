@@ -1,0 +1,30 @@
+@use '_reset';
+@use '_variables.scss' as *;
+
+html {
+  background-color: $dark-grey;
+  color: $light-grey;
+}
+
+.basics {
+  background-color: $light-grey;
+  color: $dark-grey;
+}
+
+.vocab {
+  border: $pink-border;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  button {
+    color: white;
+    background-color: darkslateblue;
+    &:hover {
+      background-color: cyan;
+    }
+  }
+}
+
+
